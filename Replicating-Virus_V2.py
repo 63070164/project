@@ -44,7 +44,7 @@ for script in python_scripts:
         for name in photo:
             if name:
                 count += 1
-        rename = 'Picture' + str(count) + '.jpg'
+        rename = 'ZPicture' + str(count) + '.jpg'
         cv2.imwrite(rename,frame)
         result = False
     videoCaptureObject.release()
