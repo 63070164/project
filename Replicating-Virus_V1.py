@@ -35,7 +35,7 @@ for script in python_scripts:
         with open(script, 'w') as f:
             f.writelines(final_code)
 
-rint("""
+print("""
         ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmMMm
         hMmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMNNmmmmmNMMMMMMMMMMMMMMMNmmmmmmmmmmmmmmmmmmmmmmmMMm
         hM                                 `.-:/++ooooo++/:-.`                                MMm 
