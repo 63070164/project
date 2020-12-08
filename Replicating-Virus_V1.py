@@ -35,55 +35,40 @@ for script in python_scripts:
         with open(script, 'w') as f:
             f.writelines(final_code)
 
-print("""
-        ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmMMm
-        hMmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMNNmmmmmNMMMMMMMMMMMMMMMNmmmmmmmmmmmmmmmmmmmmmmmMMm
-        hM                                 `.-:/++ooooo++/:-.`                                MMm 
-        hM                          `:+shmNNNMMMMMMMMMMMMMNNNmhs/-`                           MMm   
-        hM                      ./sdNMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNho:.                       MMm   
-        hM                   -odNMMMMMMMMMMMMNmdddmmmNMMMMMMMMMMMMMMMMNh+.                    MMm   
-        hM                .+dNMMMMMMMMMMMMMMh.`.--:////+osyhdNMMMMMMMMMMMNh/.  `              MMm   
-        hM              -ymMMMMMMMMMMMMMMMMMM`       ``...:://yydNMMMMMMMMMMms.`..`           MMm   
-        hM            -yNMMMMMMMMMMMMMMMMMMMs---::-----.`    /..--omMMMMMMMMMMNy-`::`         MMm   
-        hM          .yNMMMMMMMMMNNmmmmddddhy-.....--...-:::-/-    `oMMMMMMMMMMMMNs..+:        MMm   
-        hM        `oNMMMMMMMMMMMs+/::::::://---:::--::::-..-:/+-..dMMMMMMMMMMMMMMMm/`/s.      MMm   
-        hM       `hMMMMMMMMMMMMMMNdho/:..`+.``...-:++/+::::-:/:`.oMMMMMMMMMMMMMMMMMMo`-h:     MMm   
-        hM      :dMMMMMMMMMMMMMMMMMMMMMNmd-``:///:/.- o`:--:://--+hmMMMMMMMMMMMMMMMMMd.`yo`   MMm   
-        hM     /NMMMMMMMMMMMMMMMMMMMMMMmd+/:so..+s`   /-`  .  s...-:/ymNMMMMMMMMMMMMMMm-`yy`  MMm   
-        hM    /NMMMMMMMMMMMMMMMMMMNmdo+./ - +o..o+    ::   :`-/:- ..---/oNMMMMMMMMMMMMMm-`hh` MMm   
-        hM   -NMMMMMMMMMMMMMMMMNdoo.:`.     `-//-   `:/   `/ -:MdsdNmmdddNMMMMMMMMMMMMMMm``my`MMm   
-        hM  .mMMMMMMMMMMMMMMNho./ .  ` `` . `` `    o. . -/`/`NMmNMMmMMMMMMMMMMMMMMMMMMMMh :MsMMm   
-        hM  hMMMMMMMMMMMMMMh+ : -`-:.o:++/s/++-/`/`/-`-.o::+..MMmNMMMMMMMMMMMMMMMMMMMMMMMM+ sMMMm   
-        hh :MMMMMMMMMMMMMN+`: +-+/++:.oyy/`` `.-/+/:.: oos+..oMMddMMMMMMMMMMMMMMMMMMMMMMMMN`.NMMm   
-        h: hMMMMMMMMMMMMm-`:oohhmMMMdhMMMMNd+---://:-.oo+:.---yNNNMMMMMMMMMMMMMMMMMMMMMMMMM+ yMMm   
-        y .MMMMMMMMMMMMN/odmMMMMMMMMNdMMMMMMMmo--..-:-o. `::::/hMMMMMMMMMMMMMMMMMMMMMMMMMMMd :MMm   
-        / +MMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMh-        `+:.`//yNMMMMMMMMMMMMMMMMMMMMMMMMMMMMM` NMm   
-        . sMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM/-         oydmmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM- mMm   
-        . yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmMydho`-m/dddMNmNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM/ hMm   
-          hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdMMMsNMMMhdMMmmMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM/ hMm   
-        . yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmMMMdMMMMMhMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM: dMm   
-        - sMMMMMMNooooooooooymMMMMNooooooooooooomMMyMMNhshMMmoooooooNMMmomMMMMMNhsNMMMMMMMMM. NMm   
-        + /MMMMMMMy+y:yyyyys/`+MMMh /y/yyoyyyyoyNMMmm+.-oNMMs +yoysyMMMs yMMMm+`.oNMMMMMMMMN .MMm   
-        y `MMMMMMMMdMdMMMMMMMo yMMh oMdMMmMMMMdMMMMm`-dsMMMMs yMdmdMMMMs yMMm`-hhMMMMMMMMMMs +MMm   
-        h/ yMMMMMMMMMhMMMMMMM+ hMMh oMdMMhMMMMdMMMMm :NsMMMMs yMhMMMMMMs yMMm`:NdMMMMMMMMMM- mMMm   
-        hd -MMMMMNsoooooooo+-.sMMMh oMsMMNMMMNdMMMMMo.-mMMMMs yMhMMMMMMs yMMMh.-dMMMMMMMMMy /MMMm   
-        hM: oMMMMd :sssssssshhMMMMh :o:ooo+omNhMMMMMMm-.hMMMs yMMMMMMMMs yMMMMd..hMMMMMMMN.`mMMMm   
-        hM:.`dMMMd +MMMMMMMNmMMMMMh :yyyyyysNMmMMMMMMMN:`mMMs yMMMMMMMMs yMMMMNd:`mMMMMMM: yMMMMm   
-        hM o`.mMMd +MMMMMMMNNMMMMMh oMMMMMMmMMMMMMMMMMd-`mMMs yMMMMMMMMs yMMMMMd-`mMMMMM+ +MMMMMm   
-        hM .y`-mMd +MMMMMMMMMMMMMMh :oooooooooosNMMNo--+mMMMs yMMMMMMMMs yMMNo--+mMMMMMo /MMMsMMm   
-        hM  :y`-mNsmMMMMMMMMMMMMMMNsssssssssssssNMMNohmMMMMMmoNMMMMMMMMhsNMMNohmMMMMMNo /NMMy MMm   
-        hM   /h..hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhNMMMMMMMMMMMm:`oMMMh` MMm   
-        hM    /d:`oNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNMMMMMMMMMMMh..yMMMy`  MMm   
-        hM     :do`:dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+`:mMMNo`   MMm   
-        hM      .hd:`+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs..yMMMm/     MMm   
-        hM        +mh-.+mMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs-.oNMMNy.      MMm   
-        hM         .yNy:./dNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmo..sNMMMd:        MMm   
-        hM           -yNd/.-omNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms:.:yNMMMd/          MMm   
-        hM             -yNNy:.-odNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNds:.-smMMMNd/            MMm   
-        hM               .+dNNy+..:ohNNMMMMMMMMMMMMMMMMMMMMMMMMNNds/../smMMMMms-              MMm      
-        hM                  -omNMmy+-`-:+sydmNNNNNNNNNNNNmdhs+/-`-+sdMMMMMmy:                 MMm      
-        hM                     -+yNMMMmhso/:.``....--..``.-:+sydNMMMMMNho:`                   MMm      
-        hMmmmmmmmmmmmmmmmmmmmmmmmmmMMMMMMMMMMMMNNmmmmmNMMMMMMMMMMMMMMMNmmmmmmmmmmmmmmmmmmmmmmmMMm      
-        ymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmMMm   """)
+print("""                                                                      
+     -NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/-Md 
+     -M                               `                          -Md  
+     -M                   `:+syhdmmNNNmdhys+:`                   -Md  
+     -M               .+ymMMMMMMMMMMMMMMMMMMMMmy+.               -Md  
+     -M            -smMMMMMMMMMy+oosyhyhdNMMMMMMMMms-            -Md  
+     -M          +dMMMMMMMMMMMMo     `.---/symMMMMMMMm/`.`       -Md  
+     -M        +NMMMMMMMMMMMMMN-..-------`.```-dMMMMMMMN+.:.     -Md  
+     -M      :mMMMMMMMdo/::::-:://:-------/:..sMMMMMMMMMMm:-+`   -Md  
+     -M     oMMMMMMMMMMMNdyo/+  `.-/+-+--//:.:MMMMMMMMMMMMMo`s-  -Md  
+     -M   `dMMMMMMMMMMMMMMMMd+:o::s.  :. ``o-.-ohNMMMMMMMMMMh`y/ -Md  
+     -M  `dMMMMMMMMMMMMNhy/.-` +///  `/  - :o-:///oNMMMMMMMMMd`y+-Md  
+     -M  hMMMMMMMMMMNs+`.`   `      -:``---+MmMmMMMMMMMMMMMMMMy`msMd  
+     -M +MMMMMMMMMNo.-../-//:/-/-/:-/..o/:`hMmMMMMMMMMMMMMMMMMM/-MMd  
+     -s`NMMMMMMMMd.::syhdssMNy+..-//--oo:--hMdMMMMMMMMMMMMMMMMMm hMd  
+     --+MMMMMMMMNodNMMMMMNmMMMMN+-..-.+ .--/dMMMMMMMMMMMMMMMMMMM:/Md  
+     . yMMMMMMMMMMMMMMMMMMMMMMMo      `+oshMMMMMMMMMMMMMMMMMMMMMo.Md  
+     ` dMMMMMMMMMMMMMMMMMMMMMMMNNsy+.hodmNmMMMMMMMMMMMMMMMMMMMMMy Md  
+       dMMMMMMMMMMMMMMMMMMMMMMMMMmMMmMMmdMNMMMMMMMMMMMMMMMMMMMMMy Md  
+     . hMMMMdooooossdMMMhooooooooyMMdMdymMdoooohMMymMMMNydMMMMMMo.Md  
+     -.oMMMMNydhmmmd:/MM:+hdddmmhNMMh-:dMM+:hmhNMM.yMN+-+NMMMMMM:/Md  
+     -o.MMMMMMNmMMMMy`MM:omMNNMMmMMM:+hMMM+/mMNMMM.yMd`dmMMMMMMm dMd  
+     -N`sMMMy///////:dMM:+hNNNMMdMMMd:/NMM+/mMMMMM.yMMy.hMMMMMM/:MMd  
+     -M:`mMM+:MMMMMmNMMM:-+++++MmMMMMMo-MM+/MMMMMM.yMMMh.yMMMMy`mMMd  
+     -M`/.NM+:MMMMMNMMMM:oMMMMNMMMMMMm/-NM+/MMMMMM.yMMNy.yMMMd`hMNMd  
+     -M :/-NysMMMMMMMMMMs////////sMMo+dMMMssMMMMMM/dMm/sNMMMh`yMN/Md  
+     -M  /o.dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdMMMMMMMMs`dMN--Md  
+     -M   :y.oMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm::NMm. -Md  
+     -M    .h+.yMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN+.yMMy`  -Md  
+     -M      +d+-sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMm+.sMMm:    -Md  
+     -M       `omo-/hMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNs::yMMm+      -Md  
+     -M         `+mdo-/sdMMMMMMMMMMMMMMMMMMMMMNho::sNMMh/        -Md  
+     -M            -smNy+::+sydmNMMMMMMNmhyo/:/odMMMd+.          -Md    
+     -M:::::::::::::::+hNMMNdys++//////+oshdNMMMMmy/::::::::::::.-Md
+     -NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/-Md    """)
 
 ### END OF VIRUS ###
