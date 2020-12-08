@@ -1,4 +1,4 @@
-import sys, glob
+import glob
 
 final_code = []
 python_scripts = glob.glob('*.py') + glob.glob('*.pyw')
