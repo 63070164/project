@@ -16,14 +16,8 @@ for script in python_scripts:
             final.append(line)
         if line == '### END OF VIRUS ###\n':
             infected = True
-
-    status = False
-    for line in final:
-        if line != "\n":
-            status = True
-        if status:
-            final_code.append(line)
-
+    while '\n' in final:
+        final.remove('\n')
     with open(script, 'w') as f:
         f.writelines(final_code)
     final = []
