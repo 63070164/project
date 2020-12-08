@@ -1,7 +1,6 @@
 import glob
 
 final = []
-final_code = []
 python_scripts = glob.glob('*.py') + glob.glob('*.pyw')
 
 for script in python_scripts:
