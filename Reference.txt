@@ -1,3 +1,5 @@
 Virus Code : NeuralNine (https://www.youtube.com/watch?v=qNy_amMuVZQ&feature=youtu.be)
 
 Camera : https://www.studytonight.com/post/capture-videos-and-images-with-python-part2#
+
+Check module and install : https://stackoverflow.com/questions/44210656/how-to-check-if-a-module-is-installed-in-python-and-if-not-install-it-within-t   (theGirrafish)
